@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(12, 12, 97),rgb(105, 43, 105));
+}
+.todo{
+    background-color: aliceblue;
+    width: 400px;
+    height: auto;
+    padding: 35px;
+    text-align: center;
+    border: 2px solid rgb(148, 95, 148);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(148, 95, 148);
+}
+h1{
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+#task{
+    padding : 10px 5px ;
+    width:70% ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+button{
+    padding:10px ;
+    border-radius: 10px;
+    width:20% ;
+    background-color: rgb(250, 108, 56);
+    color: white;
+    cursor: pointer;
+}
+#newlist{
+    position: relative;
+    list-style-type:number;
+    /* list-style: none; */
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: left;
+    /* background-color: rgb(201, 190, 187); */
+    border-radius: 20px;
+    /* margin: 15px; */
+
+}
+#newlist i{
+
+position: absolute;
+font-size: 0.8rem;
+right: 0;
+color: rgb(82, 80, 80);
+cursor: pointer;
+}
+/* #newlist::before{
+    content:"☐";
+    position: absolute;
+    text-align: left;
+} */
+
+#newlist i:hover{
+    font-size: 1.2rem;
+    color: red;
+}
